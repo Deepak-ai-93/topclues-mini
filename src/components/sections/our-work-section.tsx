@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -27,14 +28,14 @@ export function OurWorkSection() {
   ];
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 md:p-16 lg:p-24 bg-background">
+    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
       <AnimatedText
         text="Our Work"
         el="h2"
         splitType="words"
         className="text-4xl md:text-6xl font-bold font-headline uppercase text-foreground mb-12 text-center"
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden">
             <CardContent className="p-0">

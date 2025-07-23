@@ -1,10 +1,11 @@
+
 "use client";
 
 import { AnimatedText } from '@/components/animated-text';
 
 export function AboutSection() {
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 md:p-16 lg:p-24 bg-background">
+    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
       <div className="max-w-4xl mx-auto">
         <AnimatedText
           text="Topclues Solution is a digital marketing agency that crafts focused, measurable, and magnetic strategies."
@@ -17,7 +18,7 @@ export function AboutSection() {
           el="p"
           splitType="words"
           stagger={0.01}
-          className="text-xl md:text-2xl font-body text-foreground/80 text-center"
+          className="text-lg md:text-xl lg:text-2xl font-body text-foreground/80 text-center"
         />
       </div>
     </section>

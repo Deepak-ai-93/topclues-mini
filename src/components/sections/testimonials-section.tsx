@@ -1,3 +1,4 @@
+
 "use client";
 
 import { AnimatedText } from '@/components/animated-text';
@@ -26,18 +27,18 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 md:p-16 lg:p-24 bg-secondary/30">
+    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-secondary/30">
       <AnimatedText
         text="What Our Clients Say"
         el="h2"
         splitType="words"
         className="text-4xl md:text-6xl font-bold font-headline uppercase text-foreground mb-12 text-center"
       />
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
           <Card key={index}>
             <CardContent className="p-6">
-              <blockquote className="text-lg font-body text-foreground/80 mb-4">
+              <blockquote className="text-base md:text-lg font-body text-foreground/80 mb-4">
                 "{testimonial.quote}"
               </blockquote>
               <p className="text-right font-bold text-foreground">
