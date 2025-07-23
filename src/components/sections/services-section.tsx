@@ -5,9 +5,9 @@ import { AnimatedText } from '@/components/animated-text';
 
 export function ServicesSection() {
   const services = [
-    "STRATEGY & CONSULTING",
-    "PERFORMANCE MARKETING",
-    "CONTENT & CREATIVE",
+    "SOCIAL MEDIA MARKETING",
+    "VIDEO EDITING",
+    "GRAPHIC DESIGN",
   ];
 
   return (
