@@ -10,7 +10,7 @@ export function OurWorkSection() {
     {
       title: 'Project Alpha',
       description: 'A cutting-edge marketing campaign for a tech startup.',
-      image: 'https://placehold.co/600x400.png',
+      image: 'https://images.unsplash.com/photo-1678690832311-bb6e361989ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8fHwxNzUzMjQ3MTAzfDA&ixlib=rb-4.1.0&q=80&w=1080',
       hint: 'tech startup'
     },
     {
