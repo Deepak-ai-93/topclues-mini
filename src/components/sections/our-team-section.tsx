@@ -60,7 +60,7 @@ export function OurTeamSection({ id }: { id: string }) {
             <ScrollArea className="w-full whitespace-nowrap">
               <div className="flex w-max space-x-4 p-4">
                 {(team as any)[dept].map((member: any, index: number) => (
-                  <Card key={index} className="overflow-hidden text-center w-64 flex-shrink-0">
+                  <Card key={index} className="overflow-hidden text-center w-64 flex-shrink-0 animate-pulse-slow">
                     <CardContent className="p-4">
                       <div className="mx-auto mb-4 overflow-hidden rounded-full w-32 h-32">
                         <Image
