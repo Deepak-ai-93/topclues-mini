@@ -3,6 +3,7 @@ import { AboutSection } from '@/components/sections/about-section';
 import { SocialMediaSection } from '@/components/sections/social-media-section';
 import { VideoEditingSection } from '@/components/sections/video-editing-section';
 import { GraphicDesignSection } from '@/components/sections/graphic-design-section';
+import { OurTeamSection } from '@/components/sections/our-team-section';
 import { OurWorkSection } from '@/components/sections/our-work-section';
 import { TestimonialsSection } from '@/components/sections/testimonials-section';
 import { ContactSection } from '@/components/sections/contact-section';
@@ -15,6 +16,7 @@ export default function Home() {
       <SocialMediaSection id="social-media" />
       <VideoEditingSection id="video-editing" />
       <GraphicDesignSection id="graphic-design" />
+      <OurTeamSection id="our-team" />
       <OurWorkSection id="our-work" />
       <TestimonialsSection id="testimonials" />
       <ContactSection id="contact" />
