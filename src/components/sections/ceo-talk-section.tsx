@@ -24,7 +24,7 @@ export function CeoTalkSection({ id }: { id: string }) {
       </div>
       <div className="lg:w-1/2 lg:pl-12 mb-12 lg:mb-0 order-2 lg:order-1">
         <Image
-          src="https://placehold.co/400x400.png"
+          src="https://topcluessolutions.in/wp-content/uploads/2025/02/CEO.jpg"
           alt="CEO"
           width={400}
           height={400}
