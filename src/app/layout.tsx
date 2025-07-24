@@ -19,6 +19,7 @@ export default function RootLayout({
     { id: 'social-media', title: 'Social Media' },
     { id: 'video-editing', title: 'Video Editing' },
     { id: 'graphic-design', title: 'Graphic Design' },
+    { id: 'ceo-talk', title: 'From the CEO' },
     { id: 'our-team', title: 'Our Team' },
     { id: 'our-work', title: 'Our Work' },
     { id: 'testimonials', title: 'Testimonials' },
