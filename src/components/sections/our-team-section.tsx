@@ -9,6 +9,13 @@ import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 
 export function OurTeamSection({ id }: { id: string }) {
   const team = {
+    'Web Developers': [
+      { name: 'Deepak Bagada', role: 'Lead Web Developer', image: 'https://placehold.co/400x400.png', hint: 'developer portrait' },
+      { name: 'Emma Wilson', role: 'Frontend Developer', image: 'https://placehold.co/400x400.png', hint: 'frontend professional' },
+      { name: 'James Taylor', role: 'Backend Developer', image: 'https://placehold.co/400x400.png', hint: 'backend engineer' },
+      { name: 'Charlotte Moore', role: 'Full-Stack Developer', image: 'https://placehold.co/400x400.png', hint: 'full-stack programmer' },
+      { name: 'William Anderson', role: 'DevOps Engineer', image: 'https://placehold.co/400x400.png', hint: 'devops professional' },
+    ],
     'Graphic Designers': [
       { name: 'Alex Johnson', role: 'Lead Graphic Designer', image: 'https://placehold.co/400x400.png', hint: 'portrait professional' },
       { name: 'Olivia Martinez', role: 'Senior Graphic Designer', image: 'https://placehold.co/400x400.png', hint: 'designer portrait' },
@@ -22,13 +29,6 @@ export function OurTeamSection({ id }: { id: string }) {
       { name: 'Sophia Miller', role: 'SEO Content Writer', image: 'https://placehold.co/400x400.png', hint: 'seo specialist' },
       { name: 'Liam Davis', role: 'Technical Writer', image: 'https://placehold.co/400x400.png', hint: 'technical expert' },
       { name: 'Ava Rodriguez', role: 'Blog & Article Writer', image: 'https://placehold.co/400x400.png', hint: 'blogger portrait' },
-    ],
-    'Web Developers': [
-      { name: 'Peter Jones', role: 'Lead Web Developer', image: 'https://placehold.co/400x400.png', hint: 'developer portrait' },
-      { name: 'Emma Wilson', role: 'Frontend Developer', image: 'https://placehold.co/400x400.png', hint: 'frontend professional' },
-      { name: 'James Taylor', role: 'Backend Developer', image: 'https://placehold.co/400x400.png', hint: 'backend engineer' },
-      { name: 'Charlotte Moore', role: 'Full-Stack Developer', image: 'https://placehold.co/400x400.png', hint: 'full-stack programmer' },
-      { name: 'William Anderson', role: 'DevOps Engineer', image: 'https://placehold.co/400x400.png', hint: 'devops professional' },
     ],
     'Social Media Managers': [
       { name: 'Maria Garcia', role: 'Lead Social Media Manager', image: 'https://placehold.co/400x400.png', hint: 'social media professional' },
