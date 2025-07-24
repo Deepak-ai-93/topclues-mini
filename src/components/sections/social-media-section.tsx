@@ -24,7 +24,7 @@ export function SocialMediaSection({ id }: { id: string }) {
       </div>
       <div className="lg:w-1/2">
         <Image
-          src="https://placehold.co/600x400.png"
+          src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NpYWwlMjBtZWRpYSUyMG1hcmtldGluZ3xlbnwwfHx8fDE3NTMzMzgyMTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Social Media Marketing"
           width={600}
           height={400}
