@@ -3,9 +3,9 @@
 
 import { AnimatedText } from '@/components/animated-text';
 
-export function HeroSection() {
+export function HeroSection({ id }: { id: string }) {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center p-4 bg-background">
+    <section id={id} className="min-h-screen w-full flex items-center justify-center p-4 bg-background">
       <AnimatedText
         text="The next level of creativity is simplicity"
         el="h1"

@@ -3,9 +3,9 @@
 
 import { AnimatedText } from '@/components/animated-text';
 
-export function AboutSection() {
+export function AboutSection({ id }: { id: string }) {
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
+    <section id={id} className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
       <div className="max-w-4xl mx-auto">
         <AnimatedText
           text="Topclues Solution is a digital marketing agency that crafts focused, measurable, and magnetic strategies."

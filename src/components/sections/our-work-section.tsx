@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { AnimatedText } from '@/components/animated-text';
 import { Card, CardContent } from '@/components/ui/card';
 
-export function OurWorkSection() {
+export function OurWorkSection({ id }: { id: string }) {
   const projects = [
     {
       title: 'Project Alpha',
@@ -28,7 +28,7 @@ export function OurWorkSection() {
   ];
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
+    <section id={id} className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-background">
       <AnimatedText
         text="Our Work"
         el="h2"

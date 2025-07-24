@@ -4,9 +4,9 @@
 import { AnimatedText } from '@/components/animated-text';
 import { Button } from '@/components/ui/button';
 
-export function ContactSection() {
+export function ContactSection({ id }: { id: string }) {
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 bg-background">
+    <section id={id} className="min-h-screen w-full flex flex-col items-center justify-center p-8 bg-background">
       <div className="text-center">
         <AnimatedText
           text="Ready to make an impact?"

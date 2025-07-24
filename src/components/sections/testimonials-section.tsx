@@ -4,7 +4,7 @@
 import { AnimatedText } from '@/components/animated-text';
 import { Card, CardContent } from '@/components/ui/card';
 
-export function TestimonialsSection() {
+export function TestimonialsSection({ id }: { id: string }) {
   const testimonials = [
     {
       name: 'Jane Doe',
@@ -27,7 +27,7 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-secondary/30">
+    <section id={id} className="min-h-screen w-full flex flex-col items-center justify-center p-8 sm:p-16 lg:p-24 bg-secondary/30">
       <AnimatedText
         text="What Our Clients Say"
         el="h2"

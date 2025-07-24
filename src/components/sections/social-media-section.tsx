@@ -4,9 +4,9 @@
 import Image from 'next/image';
 import { AnimatedText } from '@/components/animated-text';
 
-export function SocialMediaSection() {
+export function SocialMediaSection({ id }: { id: string }) {
   return (
-    <section className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-center p-8 sm:p-16 lg:p-24 bg-secondary/30">
+    <section id={id} className="min-h-screen w-full flex flex-col lg:flex-row items-center justify-center p-8 sm:p-16 lg:p-24 bg-secondary/30">
       <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
         <AnimatedText
           text="Social Media Marketing"

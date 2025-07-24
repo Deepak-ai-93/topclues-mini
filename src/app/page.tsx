@@ -10,14 +10,14 @@ import { ContactSection } from '@/components/sections/contact-section';
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
-      <HeroSection />
-      <AboutSection />
-      <SocialMediaSection />
-      <VideoEditingSection />
-      <GraphicDesignSection />
-      <OurWorkSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <HeroSection id="hero" />
+      <AboutSection id="about" />
+      <SocialMediaSection id="social-media" />
+      <VideoEditingSection id="video-editing" />
+      <GraphicDesignSection id="graphic-design" />
+      <OurWorkSection id="our-work" />
+      <TestimonialsSection id="testimonials" />
+      <ContactSection id="contact" />
     </main>
   );
 }
