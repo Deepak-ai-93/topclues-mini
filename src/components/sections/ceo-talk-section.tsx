@@ -27,18 +27,14 @@ export function CeoTalkSection({ id }: { id: string }) {
             </div>
       </div>
       <div className="lg:w-1/2 lg:pl-12 mb-12 lg:mb-0 order-2 lg:order-1 flex items-center justify-center">
-        <div className="relative w-80 h-80">
-            <div className="absolute inset-0 rounded-full border-4 border-green-500 animate-spin-slow"></div>
-            <div className="absolute inset-0 rounded-full border-4 border-yellow-500 animate-spin-slow-reverse" style={{ animationDelay: '1s' }}></div>
-            <Image
-            src="https://topcluessolutions.in/wp-content/uploads/2025/02/CEO.jpg"
-            alt="CEO"
-            width={400}
-            height={400}
-            className="rounded-full shadow-2xl w-full h-full object-cover"
-            data-ai-hint="CEO portrait"
-            />
-        </div>
+        <Image
+        src="https://topcluessolutions.in/wp-content/uploads/2025/02/CEO.jpg"
+        alt="CEO"
+        width={400}
+        height={400}
+        className="rounded-full shadow-2xl w-80 h-80 object-cover"
+        data-ai-hint="CEO portrait"
+        />
       </div>
     </section>
   );

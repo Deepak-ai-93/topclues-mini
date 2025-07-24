@@ -98,22 +98,12 @@ export default {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.9' },
         },
-        'spin-slow': {
-            '0%': { transform: 'rotate(0deg)' },
-            '100%': { transform: 'rotate(360deg)' },
-        },
-        'spin-slow-reverse': {
-            '0%': { transform: 'rotate(0deg)' },
-            '100%': { transform: 'rotate(-360deg)' },
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'float': 'float 3s ease-in-out infinite',
         'pulse-slow': 'pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'spin-slow': 'spin-slow 10s linear infinite',
-        'spin-slow-reverse': 'spin-slow-reverse 10s linear infinite',
       },
     },
   },
