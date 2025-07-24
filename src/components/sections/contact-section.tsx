@@ -15,12 +15,12 @@ export function ContactSection({ id }: { id: string }) {
           className="text-4xl sm:text-5xl md:text-6xl font-bold font-headline uppercase text-foreground mb-8"
         />
         <div className="overflow-hidden pb-2">
-            <a href="mailto:hello@topclues.com" className="block">
+            <a href="mailto:marketing@topclues.in" className="block">
                 <Button
                 variant="link"
                 className="text-2xl sm:text-3xl md:text-4xl font-body text-foreground/80 p-0 h-auto animate-float"
                 >
-                hello@topclues.com
+                marketing@topclues.in
                 </Button>
             </a>
         </div>
