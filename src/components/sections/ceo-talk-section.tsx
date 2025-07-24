@@ -21,6 +21,13 @@ export function CeoTalkSection({ id }: { id: string }) {
             stagger={0.01}
             className="text-lg md:text-xl lg:text-2xl font-body text-foreground/80 text-center lg:text-left"
             />
+            <AnimatedText
+              text="- Bhavin Patel, CEO"
+              el="p"
+              splitType="chars"
+              stagger={0.05}
+              className="text-xl md:text-2xl font-bold font-body text-foreground mt-8 text-center lg:text-left"
+            />
       </div>
       <div className="lg:w-1/2 lg:pl-12 mb-12 lg:mb-0 order-2 lg:order-1">
         <Image
