@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'topcluessolutions.in',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

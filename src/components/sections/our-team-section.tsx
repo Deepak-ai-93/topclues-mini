@@ -10,7 +10,7 @@ import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 export function OurTeamSection({ id }: { id: string }) {
   const team = {
     'Web Developers': [
-      { name: 'Deepak Bagada', role: 'Lead Web Developer', image: 'https://placehold.co/400x400.png', hint: 'developer portrait' },
+      { name: 'Deepak Bagada', role: 'Lead Web Developer', image: 'http://topcluessolutions.in/wp-content/uploads/2025/02/Deepak-bagada-web-designer.webp', hint: 'developer portrait' },
       { name: 'Emma Wilson', role: 'Frontend Developer', image: 'https://placehold.co/400x400.png', hint: 'frontend professional' },
       { name: 'James Taylor', role: 'Backend Developer', image: 'https://placehold.co/400x400.png', hint: 'backend engineer' },
       { name: 'Charlotte Moore', role: 'Full-Stack Developer', image: 'https://placehold.co/400x400.png', hint: 'full-stack programmer' },
