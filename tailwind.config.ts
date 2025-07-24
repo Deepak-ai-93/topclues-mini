@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         body: ['Comfortaa', 'sans-serif'],
         headline: ['Comfortaa', 'sans-serif'],
+        signature: ['Dancing Script', 'cursive'],
         code: ['monospace'],
       },
       colors: {
