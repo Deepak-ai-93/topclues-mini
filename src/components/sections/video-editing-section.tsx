@@ -24,7 +24,7 @@ export function VideoEditingSection({ id }: { id: string }) {
       </div>
       <div className="lg:w-1/2">
         <Image
-          src="https://placehold.co/600x400.png"
+          src="https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGVkaXRpbmd8ZW58MHx8fHwxNzUzMzM4MzcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Video Editing"
           width={600}
           height={400}
