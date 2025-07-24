@@ -24,7 +24,7 @@ export function GraphicDesignSection({ id }: { id: string }) {
       </div>
       <div className="lg:w-1/2">
         <Image
-          src="https://placehold.co/600x400.png"
+          src="https://images.unsplash.com/photo-1519408469771-2586093c3f14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncmFwaGljJTIwZGVzaWdufGVufDB8fHx8MTc1MzMzODQwNXww&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Graphic Design"
           width={600}
           height={400}
