@@ -55,8 +55,8 @@ export function SideNav({ items }: SideNavProps) {
 
   return (
     <TooltipProvider>
-      <nav className="fixed top-1/2 -translate-y-1/2 left-4 z-50 hidden md:block">
-        <ul className="flex flex-col items-center space-y-4">
+      <nav className="fixed top-1/2 -translate-y-1/2 left-2 sm:left-4 z-50">
+        <ul className="flex flex-col items-center space-y-3 sm:space-y-4">
           {items.map((item) => (
             <li key={item.id}>
               <Tooltip>
@@ -64,7 +64,7 @@ export function SideNav({ items }: SideNavProps) {
                   <button
                     onClick={() => handleNavClick(item.id)}
                     className={cn(
-                      'w-3 h-3 rounded-full bg-foreground/30 transition-all duration-300 hover:bg-primary hover:scale-125',
+                      'w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-foreground/30 transition-all duration-300 hover:bg-primary hover:scale-125',
                       {
                         'bg-primary scale-125': activeSection === item.id,
                       }
