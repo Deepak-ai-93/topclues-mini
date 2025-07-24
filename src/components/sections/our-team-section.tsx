@@ -36,7 +36,14 @@ export function OurTeamSection({ id }: { id: string }) {
       { name: 'Mia White', role: 'Social Media Analyst', image: 'https://placehold.co/400x400.png', hint: 'data analyst' },
       { name: 'Elijah Harris', role: 'Campaign Manager', image: 'https://placehold.co/400x400.png', hint: 'campaign strategist' },
       { name: 'Harper Clark', role: 'Content Curator', image: 'https://placehold.co/400x400.png', hint: 'content specialist' },
-    ]
+    ],
+    'AI and Prompt Experts': [
+        { name: 'Dr. Evelyn Reed', role: 'Lead AI Strategist', image: 'https://placehold.co/400x400.png', hint: 'AI expert' },
+        { name: 'Leo Rivera', role: 'Prompt Engineer', image: 'https://placehold.co/400x400.png', hint: 'prompt engineer' },
+        { name: 'Chloe Chen', role: 'Machine Learning Specialist', image: 'https://placehold.co/400x400.png', hint: 'ML engineer' },
+        { name: 'Zoe Patel', role: 'AI Integration Developer', image: 'https://placehold.co/400x400.png', hint: 'AI developer' },
+        { name: 'Ryan Lee', role: 'Generative AI Artist', image: 'https://placehold.co/400x400.png', hint: 'generative artist' },
+      ]
   };
 
   const departments = Object.keys(team);
@@ -50,7 +57,7 @@ export function OurTeamSection({ id }: { id: string }) {
         className="text-4xl md:text-6xl font-bold font-headline uppercase text-foreground mb-12 text-center"
       />
       <Tabs defaultValue={departments[0]} className="w-full max-w-6xl">
-        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 h-auto">
+        <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 h-auto">
           {departments.map((dept) => (
             <TabsTrigger key={dept} value={dept} className="py-2">{dept}</TabsTrigger>
           ))}
