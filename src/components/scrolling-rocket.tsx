@@ -39,7 +39,7 @@ export function ScrollingRocket() {
   return (
     <div
       className={cn(
-        'fixed right-4 z-50 transition-all duration-100 ease-linear flex flex-col items-center',
+        'fixed right-4 z-[9999] transition-all duration-100 ease-linear flex flex-col items-center',
         'sm:right-6',
         'md:right-8'
       )}
