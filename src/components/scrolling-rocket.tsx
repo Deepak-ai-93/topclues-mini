@@ -60,7 +60,7 @@ export function ScrollingRocket() {
             className="relative transition-all duration-100 ease-linear flex items-center w-full h-16 sm:h-20 md:h-24"
             style={{ paddingLeft: `${leftPosition}%` }}
         >
-            <Rocket className="h-8 w-8 text-primary/70" />
+            <Rocket className="h-8 w-8 text-primary/70 -rotate-45" />
             <div
                 className={cn(
                 'absolute right-full -z-10 mr-1 h-4 w-12 origin-right transition-all duration-300',
