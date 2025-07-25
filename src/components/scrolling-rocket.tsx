@@ -46,35 +46,37 @@ export function ScrollingRocket() {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(scrollTimeout);
     };
-  }, [hooks]);
+  }, []);
 
   const leftPosition = 5 + scrollProgress * 80;
 
   return (
     <div
       className={cn(
-        'fixed top-4 z-[9999] transition-all duration-100 ease-linear flex items-center',
-        'sm:top-6',
-        'md:top-8'
+        'fixed top-0 left-0 right-0 z-[9999] bg-background/80 backdrop-blur-sm transition-all duration-100 ease-linear',
       )}
-      style={{ left: `${leftPosition}%` }}
     >
-      <Rocket className="h-8 w-8 text-primary/70" />
-      <div
-        className={cn(
-          'absolute right-full -z-10 mr-1 h-4 w-12 origin-right transition-all duration-300',
-          isScrolling && scrollProgress > 0.01 ? 'opacity-100 animate-flicker' : 'opacity-0'
-        )}
-        style={{
-          clipPath: 'polygon(0 50%, 100% 0, 100% 100%)',
-          background: 'linear-gradient(to right, #ff4500, #ff8c00, transparent)',
-          transform: `scaleX(${Math.min(scrollProgress * 20, 1)})`,
-        }}
-      />
-      <span 
-        className="text-xs font-body text-primary/80 ml-2 text-center"
-        dangerouslySetInnerHTML={{ __html: hookText }}
-      />
+        <div 
+            className="relative transition-all duration-100 ease-linear flex items-center w-full h-16 sm:h-20 md:h-24"
+            style={{ paddingLeft: `${leftPosition}%` }}
+        >
+            <Rocket className="h-8 w-8 text-primary/70" />
+            <div
+                className={cn(
+                'absolute right-full -z-10 mr-1 h-4 w-12 origin-right transition-all duration-300',
+                isScrolling && scrollProgress > 0.01 ? 'opacity-100 animate-flicker' : 'opacity-0'
+                )}
+                style={{
+                clipPath: 'polygon(0 50%, 100% 0, 100% 100%)',
+                background: 'linear-gradient(to right, #ff4500, #ff8c00, transparent)',
+                transform: `scaleX(${Math.min(scrollProgress * 20, 1)})`,
+                }}
+            />
+            <span 
+                className="text-xs font-body text-primary/80 ml-2 text-center"
+                dangerouslySetInnerHTML={{ __html: hookText }}
+            />
+        </div>
     </div>
   );
 }
