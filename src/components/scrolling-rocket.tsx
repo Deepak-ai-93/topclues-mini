@@ -32,13 +32,14 @@ export function ScrollingRocket() {
   return (
     <div
       className={cn(
-        'fixed right-4 z-50 transition-all duration-100 ease-linear',
+        'fixed right-4 z-50 transition-all duration-100 ease-linear flex flex-col items-center',
         'sm:right-6',
         'md:right-8'
       )}
       style={{ bottom: `${bottomPosition}%` }}
     >
       <Rocket className="h-8 w-8 -rotate-45 text-primary/70" />
+      <span className="text-xs font-body text-primary/80 mt-1">grow, like</span>
     </div>
   );
 }
