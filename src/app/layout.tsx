@@ -2,7 +2,6 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { SideNav } from '@/components/side-nav';
-import { ScrollingRocket } from '@/components/scrolling-rocket';
 
 export const metadata: Metadata = {
   title: 'Topclues Scroll',
@@ -36,7 +35,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <SideNav items={navItems} />
-        <ScrollingRocket />
         {children}
         <Toaster />
       </body>
