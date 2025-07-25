@@ -48,7 +48,7 @@ export function ScrollingRocket() {
     };
   }, [hooks]);
 
-  const bottomPosition = 5 + scrollProgress * 90;
+  const bottomPosition = 5 + scrollProgress * 80;
 
   return (
     <div
