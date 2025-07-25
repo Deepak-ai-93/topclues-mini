@@ -48,31 +48,31 @@ export function ScrollingRocket() {
     };
   }, [hooks]);
 
-  const bottomPosition = 5 + scrollProgress * 80;
+  const leftPosition = 5 + scrollProgress * 80;
 
   return (
     <div
       className={cn(
-        'fixed right-4 z-[9999] transition-all duration-100 ease-linear flex flex-col items-center',
-        'sm:right-6',
-        'md:right-8'
+        'fixed top-4 z-[9999] transition-all duration-100 ease-linear flex items-center',
+        'sm:top-6',
+        'md:top-8'
       )}
-      style={{ bottom: `${bottomPosition}%` }}
+      style={{ left: `${leftPosition}%` }}
     >
-      <Rocket className="h-8 w-8 -rotate-45 text-primary/70" />
+      <Rocket className="h-8 w-8 text-primary/70" />
       <div
         className={cn(
-          'absolute top-full -z-10 mt-1 h-12 w-4 origin-top transition-all duration-300',
+          'absolute right-full -z-10 mr-1 h-4 w-12 origin-right transition-all duration-300',
           isScrolling && scrollProgress > 0.01 ? 'opacity-100 animate-flicker' : 'opacity-0'
         )}
         style={{
-          clipPath: 'polygon(50% 100%, 0 0, 100% 0)',
-          background: 'linear-gradient(to top, #ff4500, #ff8c00, transparent)',
-          transform: `scaleY(${Math.min(scrollProgress * 20, 1)})`,
+          clipPath: 'polygon(0 50%, 100% 0, 100% 100%)',
+          background: 'linear-gradient(to right, #ff4500, #ff8c00, transparent)',
+          transform: `scaleX(${Math.min(scrollProgress * 20, 1)})`,
         }}
       />
       <span 
-        className="text-xs font-body text-primary/80 mt-1 text-center"
+        className="text-xs font-body text-primary/80 ml-2 text-center"
         dangerouslySetInnerHTML={{ __html: hookText }}
       />
     </div>
