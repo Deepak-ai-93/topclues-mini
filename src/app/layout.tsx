@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { SideNav } from '@/components/side-nav';
+import { NeuralNetworkAnimation } from '@/components/neural-network-animation';
 
 export const metadata: Metadata = {
   title: 'Topclues Scroll',
@@ -34,6 +35,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <NeuralNetworkAnimation />
         <SideNav items={navItems} />
         {children}
         <Toaster />
