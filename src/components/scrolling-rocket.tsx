@@ -8,7 +8,16 @@ import { cn } from '@/lib/utils';
 export function ScrollingRocket() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [hookText, setHookText] = useState('skyrocket<br/>your reach');
   let scrollTimeout: NodeJS.Timeout;
+
+  const hooks = [
+    { progress: 0.8, html: 'to the<br/>moon!' },
+    { progress: 0.6, html: 'drive<br/>results' },
+    { progress: 0.4, html: 'boost your<br/>brand' },
+    { progress: 0.2, html: 'engage your<br/>audience' },
+    { progress: 0, html: 'skyrocket<br/>your reach' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +32,11 @@ export function ScrollingRocket() {
       }
       const progress = Math.min(window.scrollY / totalHeight, 1);
       setScrollProgress(progress);
+
+      const currentHook = hooks.find(h => progress >= h.progress);
+      if (currentHook) {
+        setHookText(currentHook.html);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -32,7 +46,7 @@ export function ScrollingRocket() {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(scrollTimeout);
     };
-  }, []);
+  }, [hooks]);
 
   const bottomPosition = 5 + scrollProgress * 90;
 
@@ -57,9 +71,10 @@ export function ScrollingRocket() {
           transform: `scaleY(${Math.min(scrollProgress * 20, 1)})`,
         }}
       />
-      <span className="text-xs font-body text-primary/80 mt-1 text-center">
-        skyrocket<br/>your reach
-      </span>
+      <span 
+        className="text-xs font-body text-primary/80 mt-1 text-center"
+        dangerouslySetInnerHTML={{ __html: hookText }}
+      />
     </div>
   );
 }
