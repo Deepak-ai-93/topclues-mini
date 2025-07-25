@@ -39,7 +39,9 @@ export function ScrollingRocket() {
       style={{ bottom: `${bottomPosition}%` }}
     >
       <Rocket className="h-8 w-8 -rotate-45 text-primary/70" />
-      <span className="text-xs font-body text-primary/80 mt-1">grow, like</span>
+      <span className="text-xs font-body text-primary/80 mt-1 text-center">
+        skyrocket<br/>your reach
+      </span>
     </div>
   );
 }
